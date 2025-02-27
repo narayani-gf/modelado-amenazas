@@ -328,7 +328,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -430,7 +430,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -898,7 +898,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -999,7 +999,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1023,7 +1023,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Resultados\nWeb App Queries\n",
+              "name": "Resultados\nWeb App Queries",
               "description": "Datos recuperados desde la base de datos.",
               "outOfScope": false,
               "reasonOutOfScope": "",
