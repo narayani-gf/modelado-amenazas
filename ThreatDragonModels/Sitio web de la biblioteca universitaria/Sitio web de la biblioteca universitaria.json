@@ -35,8 +35,8 @@
                 "text": "Sitio web \nbiblioteca"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -129,27 +129,42 @@
             "data": {
               "type": "tm.Process",
               "name": "Sitio web \nbiblioteca",
-              "description": "El sitio web de la biblioteca universitaria se ejecutará en un servidor Linux con Apache. Este servidor será reforzado según el estándar de protección de servidores de la universidad. Esto incluye la instalación de los últimos parches de seguridad de aplicaciones y sistemas operativos.",
+              "description": "El sitio web de la biblioteca universitaria se ejecutará en un servidor Linux con Apache. Este servidor será reforzado según el estándar de protección de servidores de la universidad.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
+              "threats": [
+                {
+                  "id": "d8fbb972-1393-4646-8239-778b790da3f7",
+                  "title": "Denegación de servicio",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Un atacante podría denegar el acceso a usuarios válidos, haciendo que el servidor web no esté disponible o sea inutilizable temporalmente por medio del envío de múltiples peticiones simultaneas.",
+                  "mitigation": "Se utiliza un balanceo de cargas en el servidor web.\nSe monitorean las direcciones IP de los clientes y al encontrar un posible ataque, se bloquea el acceso.\nSe considera contratar un servicio de VPN para ocultar la dirección IP pública a los clientes.\n\nEsta en desarrollo el balanceo de cargas.\nParcialmente mitigada.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
               ],
-              "name": null
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
-              "x": 720,
+              "x": 730,
               "y": 140
             },
             "size": {
@@ -161,8 +176,8 @@
                 "text": "Bibliotecario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -255,12 +270,30 @@
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
-              "description": "",
+              "description": "(4) Bibliotecario.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b7d0ebae-b611-4e00-80c4-e268a1617c5c",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -294,7 +327,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -376,7 +409,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -431,7 +464,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -458,7 +492,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -483,15 +517,34 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Response",
-              "description": "",
+              "description": "Respuestas enviadas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "50ff411a-5c5e-437e-bead-ae8da0e81728",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Estas respuestas se transmiten a traves de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las respuestas deberían requerir HTTPS/S. Esto proporcionará confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "id": "4cdc9261-eb39-42cc-949a-cb3e2e50a602",
             "source": {
@@ -513,7 +566,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -540,7 +594,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -565,15 +619,34 @@
             "data": {
               "type": "tm.Flow",
               "name": "Web Request",
-              "description": "",
+              "description": "Respuestas recibidas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "18c04e5d-2ab6-4770-ae53-ebca39ce0484",
+                  "title": "El flujo de datos debe utilizar HTTP/S",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Estas solicitudes se transmiten a través de la Internet pública y podrían ser interceptadas por un atacante.",
+                  "mitigation": "Las solicitudes deberían requerir HTTPS/S. Esto proporcionara confidencialidad e integridad. HTTP no debe ser compatible.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "id": "f5663563-8d00-4069-afa1-bf975c7c741a",
             "source": {
@@ -622,7 +695,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -699,7 +772,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -776,7 +849,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -858,7 +931,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Resultados\nWeb App Queries",
+                    "text": "Data Flow",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1051,8 +1124,8 @@
                 "text": "Usuarios"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1145,12 +1218,30 @@
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
-              "description": "",
+              "description": "(1) Usuario web anónimo.\n(2) Usuario con credenciales de inicio de sesión válidas.\n(3) Usuario con credenciales de inicio de sesión no válidas.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "0aadb8de-81b1-4d7d-83a2-9bec90fe7ddb",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Acción de amenaza destinada a acceder y utilizar las credenciales de otro usuario, como el nombre de usuario y la contraseña.",
+                  "mitigation": "1. Autenticación adecuada\n2. Proteger datos secretos\n3. No almacenar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1528,6 +1619,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 0
+    "threatTop": 5
   }
 }
