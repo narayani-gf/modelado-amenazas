@@ -2910,7 +2910,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "UsuarioAutenticado\nSQL Query",
+                    "text": "UsuarioAutenticado\nResultado",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
