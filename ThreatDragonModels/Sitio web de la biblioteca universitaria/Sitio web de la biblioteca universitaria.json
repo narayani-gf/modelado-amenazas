@@ -328,7 +328,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -430,7 +430,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -532,7 +532,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -634,7 +634,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -658,7 +658,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Request\n",
+              "name": "Web Request",
               "description": "Respuestas recibidas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -735,7 +735,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -759,7 +759,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Páginas\n",
+              "name": "Páginas",
               "description": "Páginas web leídas desde el disco.",
               "outOfScope": true,
               "reasonOutOfScope": "",
@@ -812,7 +812,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -889,7 +889,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -990,7 +990,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Resultados\nWeb App Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
