@@ -42,6 +42,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -125,7 +126,6 @@
               ]
             },
             "id": "aef67079-30fe-414c-8a5d-50df51774648",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Sitio web \nbiblioteca",
@@ -183,6 +183,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -266,7 +267,6 @@
               ]
             },
             "id": "9dbba2de-a3ee-4140-b55b-7d388494b758",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Bibliotecario",
@@ -328,7 +328,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -430,7 +430,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -532,7 +532,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -556,7 +556,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response",
+              "name": "Web Response\n",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -634,7 +634,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -658,7 +658,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Request",
+              "name": "Web Request\n",
               "description": "Respuestas recibidas por la aplicación hacia los usuarios.",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -735,7 +735,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -759,7 +759,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Páginas",
+              "name": "Páginas\n",
               "description": "Páginas web leídas desde el disco.",
               "outOfScope": true,
               "reasonOutOfScope": "",
@@ -812,7 +812,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -889,7 +889,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -990,7 +990,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Queries",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1209,6 +1209,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1292,7 +1293,6 @@
               ]
             },
             "id": "9081dfff-4581-400f-aeee-62f659aa7062",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -1346,6 +1346,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1429,7 +1430,6 @@
               ]
             },
             "id": "7c5fed13-e451-4318-9a53-60d7c48374dc",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web \nen disco",
@@ -1458,7 +1458,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -1479,16 +1479,19 @@
                 "text": "Web Application Config"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1572,20 +1575,39 @@
               ]
             },
             "id": "a229582a-64ec-48f4-81af-d35a819d6929",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Web Application Config",
-              "description": "",
+              "description": "Archivo de configuración de la aplicación.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ae2c0697-3d83-4437-96ec-10a838690a98",
+                  "title": "Las credenciales deben estar cifradas.",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "La configuración de la aplicación web almacena las credenciales utilizadas por la aplicación web para acceder a la cola de mensajes. Un atacante podría robarlos y utilizarlos para leer datos confidenciales o colocar mensajes dudosos en la cola.",
+                  "mitigation": "Las credenciales de almacenadas deben estar cifradas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1614,6 +1636,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1697,7 +1720,6 @@
               ]
             },
             "id": "631fd4e8-5cb3-4358-8840-a357734a5400",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
@@ -1744,13 +1766,6 @@
                 "informationDisclosure": 2,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ],
@@ -1759,6 +1774,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
