@@ -1902,7 +1902,7 @@
               "threats": [
                 {
                   "id": "8cfd14f6-b988-4eb9-a86c-7cd1f0f3c463",
-                  "title": "Suplantación de identidad.",
+                  "title": "Suplantación de identidad",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Spoofing / Spoofing",
@@ -1915,7 +1915,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
