@@ -328,7 +328,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Web Response",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
