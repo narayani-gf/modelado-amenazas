@@ -1800,6 +1800,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1883,7 +1884,6 @@
               ]
             },
             "id": "b7b9c78d-4aa3-49b4-8ca3-58bd10f863d6",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuarios",
@@ -1911,13 +1911,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1941,6 +1934,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2024,7 +2018,6 @@
               ]
             },
             "id": "a35c127c-97c9-4433-a003-4c2ad3c29c27",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Controlador \nweb",
@@ -2060,6 +2053,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2143,7 +2137,6 @@
               ]
             },
             "id": "7ebc065e-5e02-4e5d-b026-629fe8cab625",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Proceso\nde login",
@@ -2182,6 +2175,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2265,7 +2259,6 @@
               ]
             },
             "id": "43f013e9-be80-43a7-9711-dd6a39af94b4",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Páginas web \nen disco",
@@ -2305,6 +2298,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -2388,7 +2382,6 @@
               ]
             },
             "id": "91a969dd-8392-4759-9575-167c69a31f41",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Base de datos",
