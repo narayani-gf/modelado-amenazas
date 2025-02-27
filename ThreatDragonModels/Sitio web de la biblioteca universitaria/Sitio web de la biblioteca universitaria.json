@@ -2528,7 +2528,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Límite\nWeb server/Db",
+                    "text": "Usuario/Web\nserver límite",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
