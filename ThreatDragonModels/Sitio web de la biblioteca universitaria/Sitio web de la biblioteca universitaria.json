@@ -430,7 +430,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Queries",
+                    "text": "Web Request",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
