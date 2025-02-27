@@ -2605,7 +2605,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "UsuarioAutenticado\nSQL Query",
+                    "text": "Web Response",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
