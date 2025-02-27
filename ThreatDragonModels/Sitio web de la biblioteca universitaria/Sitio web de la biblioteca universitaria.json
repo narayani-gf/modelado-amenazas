@@ -536,7 +536,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -739,7 +739,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Páginas",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
