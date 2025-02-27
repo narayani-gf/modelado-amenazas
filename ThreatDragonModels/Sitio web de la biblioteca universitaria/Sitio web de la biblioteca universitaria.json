@@ -165,7 +165,7 @@
           {
             "position": {
               "x": 730,
-              "y": 140
+              "y": 100
             },
             "size": {
               "width": 112.5,
@@ -393,7 +393,7 @@
             },
             "vertices": [
               {
-                "x": 660,
+                "x": 650,
                 "y": 200
               }
             ]
@@ -496,11 +496,11 @@
             "vertices": [
               {
                 "x": 786,
-                "y": 260
+                "y": 220
               },
               {
                 "x": 760,
-                "y": 300
+                "y": 260
               }
             ]
           },
@@ -560,7 +560,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response",
+              "name": "Web Response\n",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -602,7 +602,7 @@
             "vertices": [
               {
                 "x": 430,
-                "y": 300
+                "y": 260
               }
             ]
           },
@@ -704,7 +704,7 @@
             "vertices": [
               {
                 "x": 530,
-                "y": 210
+                "y": 170
               }
             ]
           },
@@ -783,7 +783,16 @@
               "cell": "aef67079-30fe-414c-8a5d-50df51774648",
               "port": "f4a9ebfa-3646-4446-a131-d9ef873f986f"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 490,
+                "y": 440
+              },
+              {
+                "x": 540,
+                "y": 440
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1018,7 +1027,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Resultados\nWeb App Queries",
+              "name": "Resultados\nWeb App Queries\n",
               "description": "Datos recuperados desde la base de datos.",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1083,7 +1092,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Usuario/Web\nserver límite",
+                    "text": "Límite Web server/Db",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1187,6 +1196,10 @@
             },
             "vertices": [
               {
+                "x": 310,
+                "y": 230
+              },
+              {
                 "x": 590,
                 "y": 270
               }
@@ -1195,7 +1208,7 @@
           {
             "position": {
               "x": 340,
-              "y": 140
+              "y": 100
             },
             "size": {
               "width": 112.5,
@@ -1324,13 +1337,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
