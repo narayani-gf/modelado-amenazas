@@ -536,7 +536,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Páginas",
+                    "text": "Web Response\n",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
