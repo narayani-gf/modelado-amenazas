@@ -495,8 +495,12 @@
             },
             "vertices": [
               {
-                "x": 740,
-                "y": 310
+                "x": 786,
+                "y": 260
+              },
+              {
+                "x": 760,
+                "y": 300
               }
             ]
           },
@@ -556,7 +560,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response\n",
+              "name": "Web Response",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
