@@ -495,10 +495,6 @@
             },
             "vertices": [
               {
-                "x": 786,
-                "y": 220
-              },
-              {
                 "x": 760,
                 "y": 260
               }
@@ -638,7 +634,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Lee web\napp config",
+                    "text": "Web Request",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
